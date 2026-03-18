@@ -1,4 +1,4 @@
-# Word Position Finder
+# File Analyst
 # April 13th, 2025
 
 import os
@@ -51,7 +51,7 @@ while user_input != "end":
                         print(f"The words '{search_words}' was found in file '{file_name}' at {word_percent:10.4f}% through the file.")
                         print(f"Quarter: {quarter}")
 
-                        with open('wordposition_results.txt', 'a') as result_file:
+                        with open('fileanalyst_results.txt', 'a') as result_file:
                             result_file.write(
                                 f"File: {file_name}, Word: {search_words}, Position: {position}, "
                                 f"Percentage: {word_percent:10.4f}%, Quarter: {quarter}\n"
